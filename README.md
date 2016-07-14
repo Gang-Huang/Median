@@ -21,6 +21,6 @@ The way to add the `j-th` payments into `paysets` is implemented by a nested fun
 
 ##Amount of calculation
 
-Say the the number of the payments is `n`, then the amount of the calculation cannot be less than `n` because it must travel through all the payments. But the subloop will stop while there are two back-to-back payments whose dates are without 60 seconds to the `clock`. So obviously, the amount calculation is far less than `n square`. In fact, it is somehow up to the intervals of these payments. If the dates are close, the calculation will be big up to `n square`, otherwise, it can be small as `n`.
+Say the the number of the payments is `n`, then the amount of the calculation cannot be less than `n` because it must travel through all the payments. But the subloop will stop while there are two back-to-back payments whose dates are without 60 seconds to the `clock`. So obviously, the amount calculation is far less than `n square`. In fact, it is somehow up to the intervals of these payments. If the dates are close, the calculation will be big up to `n square`, otherwise, it can be small as `n`. For the biggest data whose size is over 1700, the programming will cost a few minutes.
 
 
